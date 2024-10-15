@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Principal</a>
+        <br>
+        <a href="proj.tinker.html">Simulção no TinkerCard Simples</a>
+        <br>
+        <a href="arduino.html">Simulção na prática Simples</a>
+        <br>
+        <a href="tinkerS.html">Simulção no TinkerCard semáforo duplo</a>
+        <br>
+        <a href="aarduinoS.html">Simulção na prática  semáforo duplo </a>
+    </nav>
+    <br>
+    <h1>Exemplo do circuito projeto Semaforo simples:</h1>
+    <br>
+    <div>
+        <img src="./print sinaleira S.png" alt="">
+        <br>
+        <small>fonte:</small>
+        <a href="https://www.tinkercad.com/things/bvAgLLXrw98-programa-04/editel?returnTo=https%3A%2F%2Fwww.tinkercad.com%2Fdashboard%2Fdesigns%2Fcircuits">Tinkercad</a>
+    </div>
+    <br>
+    <h2> Exemplo de código de Blocos, Programação do semáforo simples com contador de led intermitente</h2>
+    <br>
+    <div>
+        <img src="./print bloco.png" alt="">
+        <br>
+        <small>fonte:</small>
+        <a href="https://www.tinkercad.com/things/bvAgLLXrw98-programa-04/editel?returnTo=https%3A%2F%2Fwww.tinkercad.com%2Fdashboard%2Fdesigns%2Fcircuits">Tinkercad</a>
+    </div>
+    <br>
+    <h2>Código c++ do projeto:</h2>
+    <br>
+    <p>
+        <pre>
+            <code>
+            // C++ code
+//
+int counter;
+
+void setup()
+{
+  pinMode(12, OUTPUT);
+  pinMode(8, OUTPUT);
+  pinMode(4, OUTPUT);
+}
+
+void loop()
+{
+  digitalWrite(12, HIGH);
+  delay(7000); // Wait for 7000 millisecond(s)
+  digitalWrite(12, LOW);
+  digitalWrite(8, HIGH);
+  delay(3000); // Wait for 3000 millisecond(s)
+  digitalWrite(8, LOW);
+  digitalWrite(4, HIGH);
+  delay(5000); // Wait for 5000 millisecond(s)
+  digitalWrite(4, LOW);
+  delay(1000); // Wait for 1000 millisecond(s)
+  for (counter = 0; counter < 100; ++counter) {
+    digitalWrite(8, HIGH);
+    delay(1000); // Wait for 1000 millisecond(s)
+    digitalWrite(8, LOW);
+    delay(1); // Wait for 1 millisecond(s)
+  }
+}
+        </code>
+    </pre>
+    </p>
+<body>
+    <html>
