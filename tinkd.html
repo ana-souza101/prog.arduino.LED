@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contador</title>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Principal</a>
+        <br>
+        <a href="proj.tinker.html">Simulção no TinkerCard Simples</a>
+        <br>
+        <a href="arduino.html">Simulção na prática Simples</a>
+        <br>
+        <a href="tinkerS.html">Simulção no TinkerCard semáforo duplo</a>
+        <br>
+        <a href="aarduinoS.html">Simulção na prática  semáforo duplo </a>
+        <br>
+        <a href="tnkerc.html">Contador crescente</a>
+        <br>
+        <a href="tinkd.html">Contador Decrescente</a>
+        <br>
+        <a href="contDS.html">Contador Decrescente com Semaforo</a>
+    </nav>
+    <br>
+    <h1>Contador Decrescente:</h1> 
+    <br>
+    <div>
+        <img src="decrescente.png" alt="">
+        <br>
+        <small>fonte:</small>
+        <a href="https://www.tinkercad.com/things/bvAgLLXrw98-programa-04/editel?returnTo=https%3A%2F%2Fwww.tinkercad.com%2Fdashboard%2Fdesigns%2Fcircuits">Tinkercard</a>
+    </div>
+    <br>
+    <h2>Código c++ :</h2>
+    <br>
+    <p>
+        <pre>
+            <code>
+                // C++ code
+//
+void setup()
+{
+  pinMode(2, OUTPUT);
+  pinMode(3, OUTPUT);
+  pinMode(4, OUTPUT);
+  pinMode(5, OUTPUT);
+  pinMode(6, OUTPUT);
+  pinMode(7, OUTPUT);
+  pinMode(8, OUTPUT);
+}
+
+void loop()
+{
+  digitalWrite(2, HIGH);
+  digitalWrite(3, HIGH);
+  digitalWrite(4, HIGH);
+  digitalWrite(5, HIGH);
+  digitalWrite(6, LOW);
+  digitalWrite(7, HIGH);
+  digitalWrite(8, HIGH);
+  delay(1000); // Wait for 1000 millisecond(s)
+  digitalWrite(2, HIGH);
+  digitalWrite(3, HIGH);
+  digitalWrite(4, HIGH);
+  digitalWrite(5, HIGH);
+  digitalWrite(6, HIGH);
+  digitalWrite(7, HIGH);
+  digitalWrite(8, HIGH);
+  delay(1000); // Wait for 1000 millisecond(s)
+  digitalWrite(2, HIGH);
+  digitalWrite(3, HIGH);
+  digitalWrite(4, HIGH);
+  digitalWrite(5, LOW);
+  digitalWrite(6, LOW);
+  digitalWrite(7, LOW);
+  digitalWrite(8, LOW);
+  delay(1000); // Wait for 1000 millisecond(s)
+  digitalWrite(2, HIGH);
+  digitalWrite(3, LOW);
+  digitalWrite(4, HIGH);
+  digitalWrite(5, HIGH);
+  digitalWrite(6, HIGH);
+  digitalWrite(7, HIGH);
+  digitalWrite(8, HIGH);
+  delay(1000); // Wait for 1000 millisecond(s)
+  digitalWrite(2, HIGH);
+  digitalWrite(3, LOW);
+  digitalWrite(4, HIGH);
+  digitalWrite(5, HIGH);
+  digitalWrite(6, LOW);
+  digitalWrite(7, HIGH);
+  digitalWrite(8, HIGH);
+  delay(1000); // Wait for 1000 millisecond(s)
+  digitalWrite(2, LOW);
+  digitalWrite(3, HIGH);
+  digitalWrite(4, HIGH);
+  digitalWrite(5, LOW);
+  digitalWrite(6, LOW);
+  digitalWrite(7, HIGH);
+  digitalWrite(8, HIGH);
+  delay(1000); // Wait for 1000 millisecond(s)
+  digitalWrite(2, HIGH);
+  digitalWrite(3, HIGH);
+  digitalWrite(4, HIGH);
+  digitalWrite(5, HIGH);
+  digitalWrite(6, LOW);
+  digitalWrite(7, LOW);
+  digitalWrite(8, HIGH);
+  delay(1000); // Wait for 1000 millisecond(s)
+  digitalWrite(2, HIGH);
+  digitalWrite(3, HIGH);
+  digitalWrite(4, LOW);
+  digitalWrite(5, HIGH);
+  digitalWrite(8, HIGH);
+  digitalWrite(6, HIGH);
+  digitalWrite(7, LOW);
+  delay(1000); // Wait for 1000 millisecond(s)
+  digitalWrite(3, HIGH);
+  digitalWrite(4, HIGH);
+  digitalWrite(2, LOW);
+  digitalWrite(5, LOW);
+  digitalWrite(6, LOW);
+  digitalWrite(7, LOW);
+  digitalWrite(8, LOW);
+  delay(1000); // Wait for 1000 millisecond(s)
+  digitalWrite(2, HIGH);
+  digitalWrite(3, HIGH);
+  digitalWrite(4, HIGH);
+  digitalWrite(5, HIGH);
+  digitalWrite(6, HIGH);
+  digitalWrite(7, HIGH);
+  delay(1000); // Wait for 1000 millisecond(s)
+}
+            </code>
+        </pre>
+    </p>
+    </body>
+    </html>
